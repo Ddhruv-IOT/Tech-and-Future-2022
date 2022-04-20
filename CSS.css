@@ -1,0 +1,372 @@
+body {
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    border-color: black;
+}
+
+.head {
+    text-align: center;
+    color: whitesmoke;
+    padding: 45px;
+    background-image: linear-gradient(#242582, blue);
+}
+
+.tab button {
+    float: left;
+    background-color: black;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+    text-decoration-color: green;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.navigation {
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+.navigation a,
+button {
+    color: white;
+    text-decoration-color: green;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: black;
+}
+
+.mainbody {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 0%;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.main {
+    flex: 100%;
+    background-image: linear-gradient(#408ec6, #7a2048, #1e2761);
+    padding: 20px;
+}
+
+.img {
+    /*background-color: green*/
+    ;
+    width: 100%;
+    padding: 20px;
+    height: 400px;
+    background-size: cover;
+}
+
+.imgstudentname {
+    flex-direction: 20% background-color: black;
+    width: 15%;
+    /*padding: 20px;
+    */
+    height: 100%;
+    background-size: cover;
+}
+
+.studentimage {
+    background-color: green;
+    width: 100%;
+    /*padding: 20px;
+    */
+    height: 75%;
+    background-size: cover;
+}
+
+.studentname {
+    background-color: hotpink;
+    width: 100%;
+    margin-top: 2%;
+    height: 23%;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.cse {
+    display: flex;
+    width: 100%;
+    /*padding: 20px;
+    */
+    height: 300px;
+    border: 5px;
+    border-color: black;
+    background-color: red;
+    border-style: solid;
+    margin-top: 5px;
+}
+
+.dd {
+    display: flex;
+    width: 100%;
+    /*padding: 20px;
+    */
+    height: 300px;
+    border: 5px;
+    border-color: black;
+    background-color: yellow;
+    border-style: solid;
+    margin-top: 5px;
+}
+
+.foot {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.details {
+    flex: 70%;
+    background-color: yellow;
+    float: right;
+    /*position: relative;
+    */
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 15;
+    font-weight: normal;
+}
+
+.dir1 {
+    /*position: relative;
+    */
+    /*display: inline-block;
+    */
+}
+
+.drop-down-links {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop-down-links a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.drop-down-links a:hover {
+    background-color: green;
+}
+
+.dir1:hover .drop-down-links {
+    display: block;
+}
+
+.tab {
+    overflow: hidden;
+    display: flex;
+    /*border: 1px solid #ccc;
+    */
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 10px 12px;
+    /*border: 1px solid #ccc;
+    */
+    border-top: none;
+}
+
+.img_gallery,
+.analytics_gallery_center_align {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.gallery {
+    align-content: center;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 330px;
+    height: 300px;
+    background-color: olive;
+    color: white;
+    font-size: 40;
+    font-weight: bold;
+}
+
+div.gallery_analytics {
+    align-content: center;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 450px;
+    height: 440px;
+    background-color: olive;
+    color: white;
+    font-size: 40;
+    font-weight: bold;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery iframe {
+    width: 300px;
+    height: 200px;
+    padding: 12px;
+    background-color: black;
+}
+
+div.gallery img {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    height: 450px;
+    padding: 12px;
+    background-color: black;
+}
+
+#gallery_pics_heading,
+#gallery_analytics_heading {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.resources_sub_heads{
+    align-content: center;
+    text-align: center;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas: 'left middle middle middle middle right'
+        /* grid-column-gap: 10px;
+     - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+    padding: 10px;
+    height: 400px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+    grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+    grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+    grid-area: right;
+}
+
+@media screen and (max-width: 800px) {
+
+    .navigation,
+    .dir1 {
+        flex-direction: column;
+    }
+
+    .mainbody {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .cse,
+    .dd {
+        flex-direction: column;
+        height: 40%;
+        width: 100%;
+    }
+
+    .imgstudentname {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .tab button {
+        flex-direction: column;
+        background-color: black;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+        text-decoration-color: green;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas: 'header header header header header header''left left left left left left''middle middle middle middle middle middle''right right right right right right''footer footer footer footer footer footer';
+    }
+}
